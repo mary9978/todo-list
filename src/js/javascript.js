@@ -4,7 +4,7 @@ function LightToDark() {
     document.documentElement.style.setProperty('--main-color', '#171823');
     document.documentElement.style.setProperty('--text-color', '#fff');
     document.documentElement.style.setProperty('--border-color', '#393A4B');
-    document.querySelector(".LBack-ground").style.backgroundImage = "url(\"../img/bg-desktop-dark.jpg\")"
+    document.querySelector(".LBack-ground").style.backgroundImage = "url(\"../src/img/bg-desktop-dark.jpg\")"
     document.querySelector(".DChangeMod").style.display = "flex"
     document.querySelector(".LChangeMod").style.display = "none"
 }
@@ -14,7 +14,7 @@ function DarkToLight() {
     document.documentElement.style.setProperty('--main-color', '#fff');
     document.documentElement.style.setProperty('--text-color', '#494C6B');
     document.documentElement.style.setProperty('--border-color', '#e3e4f1');
-    document.querySelector(".LBack-ground").style.backgroundImage = "url(\"../img/bg-desktop-light.jpg\")"
+    document.querySelector(".LBack-ground").style.backgroundImage = "url(\"../src/img/bg-desktop-light.jpg\")"
     document.querySelector(".DChangeMod").style.display = "none"
     document.querySelector(".LChangeMod").style.display = "flex"
 }
@@ -74,7 +74,7 @@ function addTodo(event) {
     // //trashTodo
     const trash = document.createElement("img")
     trash.addEventListener('click', deleteCheck)
-    trash.src = "../img/icon-cross.svg"
+    trash.src = "../src/img/icon-cross.svg"
     trash.classList.add("delete")
     sideDiv2.appendChild(trash)
     //add local
@@ -141,7 +141,7 @@ function getTodos() {
         checkBox.classList.add("circle")
         sideDiv1.appendChild(checkBox)
         const imgBox = document.createElement("img")
-        imgBox.src = "../img/icon-check.svg"
+        imgBox.src = "../src/img/icon-check.svg"
         imgBox.classList.add("check")
         checkBox.appendChild(imgBox)
         //create name
@@ -153,7 +153,7 @@ function getTodos() {
         //trashTodo
         const trash = document.createElement("img")
         trash.addEventListener('click', deleteCheck)
-        trash.src = "../img/icon-cross.svg"
+        trash.src = "../src/img/icon-cross.svg"
         trash.classList.add("delete")
         sideDiv2.appendChild(trash)
         //append to list
